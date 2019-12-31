@@ -1,6 +1,32 @@
-h1{
+#wrapper{
+	position: relative;
+}
+#header_wrapper{
+	font-family: 'Libre Franklin', Helvetica;
+	position: absolute; 
+	z-index: 1;
+	color: white;
+	margin: auto;
+	width: 100%;
+	padding-top: 100px;
+	/*outline: 2px dashed blue;*/
+}
+.header{
 	text-align: center;
+	padding: 25px;
 }
 #soon{
-	color: blue;
+	color: #add8e6;
+}
+#name{
+	font-size: 30px;
+}
+canvas {
+	background: #232323;
+	z-index: -1;
+	filter: alpha(opacity=10);
+	opacity: 0.5;
+}
+html{
+	background: #232323;
 }
