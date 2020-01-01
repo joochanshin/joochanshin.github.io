@@ -9,17 +9,27 @@
 	</head>
 	<body>
 		<div id="wrapper", content="width=device-width, initial-scale=1.0">
-			<div id="header_wrapper">
+			
+			<div class="header_wrapper" id="comingsoon">
+				<div class="header" id="name">JooChan <span id="soon">Shin</span></div>
+				<div class="header">Coming <span id="soon">Soon</span></div>
+			</div>
+
+			<div class="header_wrapper" hidden>
 				<div class="header" id="name">Main <span id="soon">Page</span></div>
 			</div>
+
 			<ul id="navbar">
 			  <li class="navbar"><a href="#Journal">Journal</a></li>
 			  <li class="navbar"><a href="#non-coding_projects">Non-Coding Projects</a></li>
 			  <li class="navbar"><a href="#coding_projects">Coding Projects</a></li>
-			  <li class="navbar"><a href="#about">About</a></li>
+			  <li class="navbar"><a href="#about" onclick="myFunction()">About</a></li>
 			</ul>
+
 			<canvas id="canvas"></canvas>
 		</div>
+
 		<script src="../dots.js"></script>
+		<script src="../js/index.js"></script>
 	</body>
 </html>

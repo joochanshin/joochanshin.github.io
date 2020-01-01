@@ -1,7 +1,7 @@
 #wrapper{
 	position: relative;
 }
-#header_wrapper{
+.header_wrapper{
 	font-family: 'Libre Franklin', Helvetica;
 	position: absolute; 
 	z-index: 1;
@@ -30,3 +30,4 @@ canvas {
 html{
 	background: #232323;
 }
+#comingsoon{}
