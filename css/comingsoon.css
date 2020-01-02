@@ -27,8 +27,6 @@
 canvas {
 	background: #232323;
 	z-index: -1;
-	filter: alpha(opacity=50);
-	opacity: 0.5;
 }
 html{
 	background: #232323;
