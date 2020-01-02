@@ -1,26 +1,72 @@
 #rectangle{
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	transform: rotate(45deg);
-	border: 2px solid black;
+	border: 10px solid #add8e6;
+	margin: 0 auto;
+	z-index: 3;
 }
 #circle{
-	width: 50px;
-	height: 50px;
-	border: 2px solid black;
+	width: 100px;
+	height: 100px;
+	border: 10px solid #add8e6;
 	border-radius: 50%;
-	top: -2px;
-	left: -2px;
+	top: -10px;
+	left: -10px;
 	position: absolute;
+	z-index: 1;
 }
 #logo{
 	border: 2px solid red;
+	height:50%;
+	padding-top: 300px;
 }
 #js{
 	transform: rotate(-45deg);
 	position: absolute;
-	top: 25%;
-	left: 25%;
-	font-size: 20px;
-	font-weight: 900;
+	top: 9%;
+	left: 17%;
+	font-size: 75px;
+	font-weight: 0;
+	color: #add8e6;
+}
+html{
+	background: grey;
+}
+
+.blocker{
+	left: 50%;
+	margin-left: -100px;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: white;
+	border: 2px solid black;
+	z-index:4;
+}
+#topleft_b{
+	margin-left: -200px;
+	margin-top: -140px;
+	animation: move1 2s forwards;
+}
+#topright_b{
+	margin-left: 0px;
+	margin-top: -140px;
+}
+#bottomright_b{
+	margin-left: 0px;
+	margin-top: 60px;
+}
+#bottomleft_b{
+	margin-left: -200px;
+	margin-top: 60px;
+}
+
+@keyframes move1{
+	0%{
+		
+	}
+	100%{
+		transform: rotateY(90deg);
+	}
 }
