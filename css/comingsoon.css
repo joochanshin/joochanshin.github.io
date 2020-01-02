@@ -1,8 +1,8 @@
 #wrapper{
 	position: relative;
 	opacity: 0;
-	animation: fadeIn .5s ease forwards;
-	animation-delay: 3.5s;
+	-webkit-animation: fadeIn .5s ease forwards;
+	-webkit-animation-delay: 3.5s;
 }
 .header_wrapper{
 	font-family: 'Libre Franklin', Helvetica;
@@ -34,9 +34,9 @@ html{
 #comingsoon{}
 @keyframes fadeIn {
 	0%{
-		opacity: 0;
+		-webkit-opacity: 0;
 	}
 	100%{
-		opacity: 1;
+		-webkit-opacity: 1;
 	}
 }
