@@ -2,7 +2,7 @@
 	width: 100px;
 	height: 100px;
 	transform: rotate(45deg);
-	border: 10px solid transparent;
+	border: 5px solid transparent;
 	margin: 0 auto;
 }
 #rectangle:before{
@@ -10,9 +10,9 @@
 	position: absolute;
 	width: 0%;
 	height: 0%;
-	top: -10px;
-	left: -10px;
-	border: 10px solid transparent;
+	top: -5px;
+	left: -5px;
+	border: 5px solid transparent;
 	-webkit-animation: rect_anim 0.75s ease-in forwards;
 }
 #rectangle:after{
@@ -20,9 +20,9 @@
 	position: absolute;
 	width: 0%;
 	height: 0%;
-	top: -10px;
-	left: -10px;
-	border: 10px solid transparent;
+	top: -5px;
+	left: -5px;
+	border: 5px solid transparent;
 	-webkit-animation: rect_anim2 0.75s ease-out forwards;
 	-webkit-animation-delay: 0.75s;
 }
@@ -39,10 +39,11 @@
 #js{
 	transform: rotateX(180deg);
 	position: absolute;
-	top: 7%;
-	left: 18%;
+	top: 5%;
+	left: 15%;
 	font-size: 75px;
-	font-weight: 0;
+	font-synthesis: weight;
+	font-weight: 500;
 	color: #add8e6;
 	opacity: 0;
 	-webkit-animation: logo_anim 1s ease forwards;
@@ -132,18 +133,18 @@
 ---------------------------------------------------------------------------
 */
 .circle__box {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   margin: 0 auto;
   position: absolute;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -55px;
   transform: rotateX(180deg);
 }
 
 .circle__wrapper {
-  width: 60px;
-  height: 120px;
+  width: 55px;
+  height: 110px;
   position: absolute;
   top: 0;
   overflow: hidden;
@@ -163,22 +164,22 @@
 .circle__whole {
   width: 100px;
   height: 100px;
-  border: 10px solid transparent;
+  border: 5px solid transparent;
   border-radius: 50%;
   position: absolute;
   top: 0;
 }
 
 .circle__right {
-  border-top: 10px solid #add8e6;
-  border-right: 10px solid #add8e6;
+  border-top: 5px solid #add8e6;
+  border-right: 5px solid #add8e6;
   right: 1px;
   -webkit-animation: circleRight 1.5s ease-in forwards;
 }
 
 .circle__left {
-  border-bottom: 10px solid #add8e6;
-  border-left: 10px solid #add8e6;
+  border-bottom: 5px solid #add8e6;
+  border-left: 5px solid #add8e6;
   left: 1px;
   -webkit-animation: circleLeft 1.5s ease-out forwards;
 }
