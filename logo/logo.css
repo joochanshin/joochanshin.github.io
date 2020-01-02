@@ -39,8 +39,8 @@
 #js{
 	transform: rotateX(180deg);
 	position: absolute;
-	top: 5%;
-	left: 15%;
+	top: 3%;
+	left: 17%;
 	font-size: 75px;
 	font-synthesis: weight;
 	font-weight: 500;
@@ -114,14 +114,14 @@
 		-webkit-transform: scale(1);
 	}
 	50%{
-		-webkit-transform: scale(.75);
+		-webkit-transform: scale(1.25);
 	}
 	75%{
-		-webkit-transform: scale(.75);
+		-webkit-transform: scale(1.25);
 		-webkit-opacity: 1;
 	}
 	99%{
-		-webkit-transform: scale(100);
+		-webkit-transform: scale(0);
 		-webkit-opacity: 0;
 	}
 	100%{
