@@ -2,19 +2,20 @@
 	width: 100px;
 	height: 100px;
 	transform: rotate(45deg);
-	border: 10px solid #add8e6;
+	border: 10px solid transparent;
 	margin: 0 auto;
 }
-#circle{
-	width: 100px;
-	height: 100px;
-	border: 10px solid #add8e6;
-	border-radius: 50%;
+#rectangle:before{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
 	top: -10px;
 	left: -10px;
-	position: absolute;
-	opacity: 0;
+	border: 10px solid #add8e6;
+	animation: rect_anim 0.75s ease-in forwards;
 }
+
 #logo{
 	border: 2px solid red;
 	height:50%;
@@ -32,6 +33,34 @@
 html{
 	background: grey;
 }
+@keyframes rect_anim{
+	0%{
+		width: 0;
+		height: 0;
+		border-left-color: #add8e6;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		
+	}
+	50%{
+		width: 0%;
+		height: 100%;
+		border-left-color: #add8e6;
+		border-bottom-color: #add8e6;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+		border-left-color: #add8e6;
+		border-bottom-color: #add8e6;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+
+}
 /*
 ---------------------------------------------------------------------------
 */
@@ -42,9 +71,9 @@ html{
   position: absolute;
   left: 50%;
   margin-left: -60px;
-  /*
+  
   border: 1px solid red;
-  */
+  
   transform: rotateX(180deg);
 }
 
