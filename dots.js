@@ -27,6 +27,8 @@ for (var i = 0; i < x; i++) {
 // Draw the scene
 
 function draw() {
+  canvas.width = window.innerWidth-12;
+  canvas.height = window.innerHeight-25;
   ctx.clearRect(0,0,canvas.width,canvas.height);
   
   ctx.globalCompositeOperation = "lighter";
