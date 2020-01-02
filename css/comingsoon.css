@@ -32,7 +32,7 @@ html{
 	background: #232323;
 }
 #comingsoon{}
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
 	0%{
 		-webkit-opacity: 0;
 	}

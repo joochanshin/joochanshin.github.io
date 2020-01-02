@@ -13,7 +13,7 @@
 	top: -10px;
 	left: -10px;
 	border: 10px solid transparent;
-	animation: rect_anim 0.75s ease-in forwards;
+	-webkit-animation: rect_anim 0.75s ease-in forwards;
 }
 #rectangle:after{
 	content: '';
@@ -23,8 +23,8 @@
 	top: -10px;
 	left: -10px;
 	border: 10px solid transparent;
-	animation: rect_anim2 0.75s ease-out forwards;
-	animation-delay: 0.75s;
+	-webkit-animation: rect_anim2 0.75s ease-out forwards;
+	-webkit-animation-delay: 0.75s;
 }
 #logo{
 	text-align: center;
@@ -48,7 +48,7 @@
 	-webkit-animation: logo_anim 1s ease forwards;
 	animation-delay: 1.5s;
 }
-@keyframes rect_anim{
+@-webkit-keyframes rect_anim{
 	0%{
 		width: 0;
 		height: 0;
@@ -74,7 +74,7 @@
 		border-right-color: transparent;
 	}
 }
-@keyframes rect_anim2{
+@-webkit-keyframes rect_anim2{
 	0%{
 		width: 0;
 		height: 0;
@@ -100,15 +100,15 @@
 		border-right-color: #add8e6;
 	}
 }
-@keyframes logo_anim{
+@-webkit-keyframes logo_anim{
 	0%{
-		opacity: 0;
+		-webkit-opacity: 0;
 	}
 	100%{
-		opacity: 1;
+		-webkit-opacity: 1;
 	}
 }
-@keyframes doneIntro{
+@-webkit-keyframes doneIntro{
 	0%{
 		-webkit-transform: scale(1);
 	}
@@ -183,7 +183,7 @@
   -webkit-animation: circleLeft 1.5s ease-out forwards;
 }
 
-@keyframes circleRight {
+@-webkit-keyframes circleRight {
   0% {
     -webkit-transform: rotate(-135deg);
   }
@@ -193,7 +193,7 @@
   }
 }
 
-@keyframes circleLeft {
+@-webkit-keyframes circleLeft {
   0%,
   50% {
     -webkit-transform: rotate(-135deg);
