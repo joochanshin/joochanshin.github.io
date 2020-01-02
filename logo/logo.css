@@ -119,9 +119,12 @@
 		transform: scale(.75);
 		opacity: 1;
 	}
-	100%{
+	99%{
 		transform: scale(100);
 		opacity: 0;
+	}
+	100%{
+		transform: scale(0);
 	}
 
 }
