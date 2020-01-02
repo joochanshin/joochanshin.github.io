@@ -1,8 +1,8 @@
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth-12;
-canvas.height = window.innerHeight-25;
+canvas.width = window.innerWidth-20;
+canvas.height = window.innerHeight-35;
 
 var stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
@@ -27,8 +27,8 @@ for (var i = 0; i < x; i++) {
 // Draw the scene
 
 function draw() {
-  canvas.width = window.innerWidth-12;
-  canvas.height = window.innerHeight-25;
+  canvas.width = window.innerWidth-20;
+  canvas.height = window.innerHeight-35;
   ctx.clearRect(0,0,canvas.width,canvas.height);
   
   ctx.globalCompositeOperation = "lighter";
