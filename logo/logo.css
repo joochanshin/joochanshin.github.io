@@ -1,3 +1,8 @@
+html{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
 #rectangle{
 	width: 100px;
 	height: 100px;
@@ -14,6 +19,7 @@
 	left: -5px;
 	border: 5px solid transparent;
 	-webkit-animation: rect_anim 0.75s ease-in forwards;
+	animation: rect_anim 0.75s ease-in forwards;
 }
 #rectangle:after{
 	content: '';
@@ -25,6 +31,8 @@
 	border: 5px solid transparent;
 	-webkit-animation: rect_anim2 0.75s ease-out forwards;
 	-webkit-animation-delay: 0.75s;
+	animation: rect_anim2 0.75s ease-out forwards;
+	animation-delay: 0.75s;
 }
 #logo{
 	text-align: center;
@@ -35,6 +43,8 @@
 	padding-top: 300px;
 	-webkit-animation: doneIntro 0.75s linear forwards;
 	-webkit-animation-delay: 2.5s;
+	animation: doneIntro 0.75s linear forwards;
+	animation-delay: 2.5s;
 }
 #js{
 	transform: rotateX(180deg);
@@ -47,6 +57,8 @@
 	color: #add8e6;
 	opacity: 0;
 	-webkit-animation: logo_anim 1s ease forwards;
+	-webkit-animation-delay: 1.5s;
+	animation: logo_anim 1s ease forwards;
 	animation-delay: 1.5s;
 }
 @-webkit-keyframes rect_anim{
@@ -129,6 +141,60 @@
 	}
 
 }
+@keyframes rect_anim2{
+	0%{
+		width: 0;
+		height: 0;
+		border-left-color: transparent;
+		border-top-color: #add8e6;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+	}
+	50%{
+		width: 100%;
+		height: 0%;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-top-color: #add8e6;
+		border-right-color: #add8e6;
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-top-color: #add8e6;
+		border-right-color: #add8e6;
+	}
+}
+@keyframes logo_anim{
+	0%{
+		-webkit-opacity: 0;
+	}
+	100%{
+		-webkit-opacity: 1;
+	}
+}
+@keyframes doneIntro{
+	0%{
+		-webkit-transform: scale(1);
+	}
+	50%{
+		-webkit-transform: scale(1.25);
+	}
+	75%{
+		-webkit-transform: scale(1.25);
+		-webkit-opacity: 1;
+	}
+	99%{
+		-webkit-transform: scale(0);
+		-webkit-opacity: 0;
+	}
+	100%{
+		-webkit-transform: scale(0);
+	}
+
+}
 /*
 ---------------------------------------------------------------------------
 */
@@ -175,6 +241,7 @@
   border-right: 5px solid #add8e6;
   right: 1px;
   -webkit-animation: circleRight 1.5s ease-in forwards;
+  animation: circleRight 1.5s ease-in forwards;
 }
 
 .circle__left {
@@ -182,6 +249,7 @@
   border-left: 5px solid #add8e6;
   left: 1px;
   -webkit-animation: circleLeft 1.5s ease-out forwards;
+  animation: circleLeft 1.5s ease-out forwards;
 }
 
 @-webkit-keyframes circleRight {
@@ -195,6 +263,25 @@
 }
 
 @-webkit-keyframes circleLeft {
+  0%,
+  50% {
+    -webkit-transform: rotate(-135deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@keyframes circleRight {
+  0% {
+    -webkit-transform: rotate(-135deg);
+  }
+  50%,
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes circleLeft {
   0%,
   50% {
     -webkit-transform: rotate(-135deg);
