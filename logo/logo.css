@@ -12,14 +12,29 @@
 	height: 0%;
 	top: -10px;
 	left: -10px;
-	border: 10px solid #add8e6;
+	border: 10px solid transparent;
 	animation: rect_anim 0.75s ease-in forwards;
 }
-
+#rectangle:after{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	top: -10px;
+	left: -10px;
+	border: 10px solid transparent;
+	animation: rect_anim2 0.75s ease-out forwards;
+	animation-delay: 0.75s;
+}
 #logo{
-	border: 2px solid red;
+	text-align: center;
+	position: absolute;
+	margin-left: -50px;
+	left: 50%;
 	height:50%;
 	padding-top: 300px;
+	animation: doneIntro 0.75s linear forwards;
+	animation-delay: 2.5s;
 }
 #js{
 	transform: rotateX(180deg);
@@ -29,9 +44,9 @@
 	font-size: 75px;
 	font-weight: 0;
 	color: #add8e6;
-}
-html{
-	background: grey;
+	opacity: 0;
+	animation: logo_anim 1s ease forwards;
+	animation-delay: 1.5s;
 }
 @keyframes rect_anim{
 	0%{
@@ -41,7 +56,6 @@ html{
 		border-top-color: transparent;
 		border-right-color: transparent;
 		border-bottom-color: transparent;
-		
 	}
 	50%{
 		width: 0%;
@@ -59,6 +73,56 @@ html{
 		border-top-color: transparent;
 		border-right-color: transparent;
 	}
+}
+@keyframes rect_anim2{
+	0%{
+		width: 0;
+		height: 0;
+		border-left-color: transparent;
+		border-top-color: #add8e6;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+	}
+	50%{
+		width: 100%;
+		height: 0%;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-top-color: #add8e6;
+		border-right-color: #add8e6;
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-top-color: #add8e6;
+		border-right-color: #add8e6;
+	}
+}
+@keyframes logo_anim{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes doneIntro{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(.75);
+	}
+	75%{
+		transform: scale(.75);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(100);
+		opacity: 0;
+	}
 
 }
 /*
@@ -71,9 +135,6 @@ html{
   position: absolute;
   left: 50%;
   margin-left: -60px;
-  
-  border: 1px solid red;
-  
   transform: rotateX(180deg);
 }
 
