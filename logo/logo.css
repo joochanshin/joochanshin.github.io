@@ -5,7 +5,10 @@ html{
 	width: 100%;
 }
 #main_wrap{
-	position: relative;
+	position: block;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 #rectangle{
 	width: 100px;
@@ -41,7 +44,9 @@ html{
 	text-align: center;
 	position: absolute;
 	margin-left: -50px;
-	margin: 0 auto;
+	margin-top: -50px;
+	left: 50%;
+	top: 50%;
 	-webkit-animation: doneIntro 0.75s linear forwards;
 	-webkit-animation-delay: 2.5s;
 	animation: doneIntro 0.75s linear forwards;
